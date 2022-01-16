@@ -1,0 +1,21 @@
+@import '../../Styles/index';
+@import '../../Styles/variables';
+
+
+.header {
+    margin-top: 1rem;
+
+    .logo {
+        min-width: 70px;
+        width: 120px;
+        margin: 0 auto;
+    }
+
+    .logo img{
+        width: 100%
+    }
+    .button {
+        @extend .main-button;
+    }
+
+}

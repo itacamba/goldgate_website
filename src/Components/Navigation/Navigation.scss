@@ -1,0 +1,118 @@
+@import '../../Styles/index';
+@import '../../Styles/variables';
+
+
+.nav-container {
+    width: 100%;
+    margin-top: 1rem;
+    
+    .navigation{
+        background-color: $yellow;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @extend .pad-sides;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    i {
+        font-size: 25px;
+        color: $blue;
+    }
+
+    .call-btn {
+        width: 40px;
+        height: 40px;
+        background-color: $blue;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .call-btn i {
+        color: $white;
+        font-size: 20px;
+        transform: scaleX(-1);
+    }
+
+    .menu-icon {
+        cursor: pointer;
+        display: none;
+    }
+
+    .desktop-nav a {
+        margin-right: 25px;
+        font-weight: $fw-sb;
+    }
+    
+    .desktop-nav .action-btn {
+        padding: .7rem 1.8rem;
+        background-color: $blue;
+        color: $white;
+        border-radius: 5px;
+    }
+
+
+    .menu-content{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .x-icon {
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 5vw;
+        padding-right: 5vw;
+    }
+
+    .menu-content nav{
+        border-top: 1px solid rgba(0,0,0,.1);
+        margin-top: 2rem;
+    }
+
+    .menu-content a{
+        display: block;
+        color: #666;
+        padding: 1rem 0;
+        padding-right: 5vw;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        text-align: right;
+    }
+
+    .menu-content .action-btn {
+        padding: .7rem 1.8rem;
+        background-color: $blue;
+        color: $white;
+        border-radius: 5px;
+        float: right;
+        margin-right: 5vw;
+        margin-top: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+
+    .nav-container {
+
+        .desktop-nav {
+            display: none;
+        }
+
+        .menu-icon {
+            display: block;
+        }
+    
+        .menu-content{
+            display: block;
+        }
+
+    }
+}

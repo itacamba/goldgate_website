@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+a {
+  text-decoration: none;
+  color: #003F6B;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 2.5rem;
+  line-height: 1.9rem;
+}
+
+p {
+  margin-top: 1rem;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1188px) {
+  h3 {
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+.box-shadow-sharp {
+  -webkit-box-shadow: 0px 1px 23px 1px rgba(196, 196, 196, 0.71);
+  box-shadow: 0px 1px 23px 1px rgba(196, 196, 196, 0.71);
+}
+
+.box-shadow-blur {
+  -webkit-box-shadow: 0px 1px 23px 1px rgba(222, 222, 222, 0.71);
+  box-shadow: 0px 1px 23px 1px rgba(222, 222, 222, 0.71);
+}
+
+.dark-shadow {
+  -webkit-box-shadow: 0px 5px 12px -2px rgba(140, 140, 140, 0.82);
+  box-shadow: 0px 5px 12px -2px rgba(140, 140, 140, 0.82);
+}
+
+.main-button {
+  text-align: center;
+  background-color: #F8BD64;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: black;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 1rem 2.5rem;
+  margin-top: 2rem;
+}
+
+.pad-top-bot {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.pad-sides, .nav-container .navigation {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.blue-gradient {
+  background: #45bedc;
+  background: -webkit-gradient(linear, left top, right top, from(#45bedc), to(#18a3df));
+  background: linear-gradient(90deg, #45bedc 0%, #18a3df 100%);
+}
+
+.nav-container {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.nav-container .navigation {
+  background-color: #F8BD64;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.nav-container i {
+  font-size: 25px;
+  color: #003F6B;
+}
+
+.nav-container .call-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #003F6B;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-container .call-btn i {
+  color: #f1f1f1;
+  font-size: 20px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.nav-container .menu-icon {
+  cursor: pointer;
+  display: none;
+}
+
+.nav-container .desktop-nav a {
+  margin-right: 25px;
+  font-weight: 500;
+}
+
+.nav-container .desktop-nav .action-btn {
+  padding: .7rem 1.8rem;
+  background-color: #003F6B;
+  color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.nav-container .menu-content {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.nav-container .x-icon {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 5vw;
+  padding-right: 5vw;
+}
+
+.nav-container .menu-content nav {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.nav-container .menu-content a {
+  display: block;
+  color: #666;
+  padding: 1rem 0;
+  padding-right: 5vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: right;
+}
+
+.nav-container .menu-content .action-btn {
+  padding: .7rem 1.8rem;
+  background-color: #003F6B;
+  color: #f1f1f1;
+  border-radius: 5px;
+  float: right;
+  margin-right: 5vw;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+  .nav-container .desktop-nav {
+    display: none;
+  }
+  .nav-container .menu-icon {
+    display: block;
+  }
+  .nav-container .menu-content {
+    display: block;
+  }
+}
+/*# sourceMappingURL=Navigation.css.map */
