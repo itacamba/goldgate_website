@@ -28,7 +28,7 @@ const Navigation = () => {
         <div className='nav-container'>
             <div className='navigation'>
                 <div className="call-btn">
-                    <i className="fas fa-phone"></i>
+                    <a href="tel:571-982-9406"><i className="fas fa-phone"></i></a>
                 </div>
                 <div className="menu-icon" onClick={() => setOpen(!open)}>
                     <i className="fas fa-bars"></i>
@@ -37,7 +37,7 @@ const Navigation = () => {
                     <nav>
                         {
                             menuLinks.map((link, i) => 
-                            <a key={i} href={link.ref}>{link.name}</a>
+                            <a key={i} href={link.ref} onClick={() => setOpen(!open)}>{link.name}</a>
                             )
                         }
                         <a href="#contact" className='action-btn'>Contact Us</a>
@@ -54,10 +54,10 @@ const Navigation = () => {
                     <nav>
                     {
                         menuLinks.map((link, i) => 
-                        <a key={i} href={link.ref}>{link.name}</a>
+                        <a key={i} href={link.ref} onClick={() => setOpen(!open)}>{link.name}</a>
                         )
                     }
-                        <a href="#contact" className='action-btn'>Contact Us</a>
+                        <a href="#contact" className='action-btn' onClick={() => setOpen(!open)}>Contact Us</a>
                     </nav>
                 </div>
                 : null

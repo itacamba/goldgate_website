@@ -1,0 +1,17 @@
+@import '../../Styles/index';
+@import '../../Styles/variables';
+
+
+.services {
+    @extend .pad-top-bot;
+    @extend .pad-sides;
+    background-color: $light-grey;
+
+    .deco-art {
+        @extend .deco-art;
+    }
+
+    .gallery-card h3 {
+        text-align: center;
+    }
+}

@@ -1,4 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #003F6B;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -118,4 +140,70 @@ p {
     margin-bottom: 0;
   }
 }
-/*# sourceMappingURL=variables.css.map */
+
+.footer {
+  background-color: #003f6b;
+  color: #f1f1f1;
+}
+
+.footer .logo {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.footer .logo img {
+  width: 100%;
+}
+
+.footer ul {
+  max-width: 250px;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.footer li {
+  padding-bottom: 10px;
+}
+
+.footer h3 {
+  margin-bottom: 1rem;
+}
+
+.footer i {
+  margin-right: 10px;
+}
+
+.footer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4rem;
+}
+
+.footer .social-media a {
+  color: #90a1c0;
+}
+
+.footer .social-media i {
+  font-size: 50px;
+  margin-right: 1rem;
+}
+
+.footer .address {
+  font-weight: 300;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer .copyright p {
+  font-size: 12px;
+  color: #979ca3;
+  text-align: center;
+  border-top: 1px solid #979ca3;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+/*# sourceMappingURL=Footer.css.map */

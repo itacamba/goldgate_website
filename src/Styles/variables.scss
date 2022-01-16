@@ -14,6 +14,7 @@ $gold: #D3AF37;
 $light-grey: #EDEDED;
 $blue: rgb(0, 63, 107);
 $yellow: #F8BD64;
+$green: #48EDB8;
 
 // fonts
 $fs-large: 2.5rem;
@@ -39,7 +40,7 @@ h2 {
 
 h3 {
     font-size: $fs-small + .2;
-    font-weight: $fw-sb;
+    font-weight: $fw-b;
     margin-top: 2.5rem;
     line-height: 1.9rem;
 }
@@ -49,6 +50,7 @@ p {
     margin-top: 1rem;
     line-height: 1.8rem;
     font-size: $fs-small;
+    font-weight: $fw-reg;
 }   
 
 @media screen and (max-width: 1188px){
@@ -70,14 +72,9 @@ p {
 
 
 // shadows
-.box-shadow-sharp {
+.shadow-blur {
     -webkit-box-shadow: 0px 1px 23px 1px rgba(196,196,196,0.71); 
     box-shadow: 0px 1px 23px 1px rgba(196,196,196,0.71);
-}
-
-.box-shadow-blur {
-    -webkit-box-shadow: 0px 1px 23px 1px rgba(222,222,222,0.71); 
-    box-shadow: 0px 1px 23px 1px rgba(222,222,222,0.71);
 }
 
 .dark-shadow {
@@ -116,4 +113,40 @@ p {
 .blue-gradient {
     background: rgb(69,190,220);
     background: linear-gradient(90deg, rgba(69,190,220,1) 0%, rgba(24,163,223,1) 100%);
+}
+
+.deco-art {
+    width: 4rem;
+    height: 5px;
+    background-color: $blue;
+}
+
+
+// shared 
+
+.two-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    width: 45%;
+}
+
+@media screen and (max-width: 820px){
+
+    .two-col {
+        flex-direction: column-reverse;
+    }
+
+    .col {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .col:last-child {
+        margin-bottom: 0;
+    }
+
 }

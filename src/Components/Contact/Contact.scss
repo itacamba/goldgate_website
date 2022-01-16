@@ -1,0 +1,92 @@
+@import '../../Styles/index';
+@import '../../Styles/variables';
+
+.contact {
+    background-color: $blue;
+
+
+    .contact-form{
+        position: relative;
+        z-index: 1;
+        @extend .pad-sides;
+        padding-bottom: 4rem;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: -100px;
+    }
+
+    .contact-form input[type=text], input[type="email"], textarea {
+        border: none;
+        outline: none;
+        background-color: rgba(255,255,255,.3);
+        padding: .8rem;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $white;
+        opacity: 1; /* Firefox */
+      }
+      
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $white;
+    }
+    
+    ::-ms-input-placeholder { /* Microsoft Edge */
+    color: $white;
+    }
+
+    .checkbox-container {
+        background-color: rgba(255,255,255,.3);
+        padding: .8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .checkbox-container h3 {
+        font-size: $fs-extra-small;
+        font-weight: normal;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .form-option {
+        margin-bottom: .5rem;
+    }
+    .form-option label{
+        margin-left: 8px;
+        cursor: pointer;
+    }
+
+    .contact-form input[type=submit] {
+        @extend .main-button;
+        border: none;
+        -webkit-appearance: none;
+    }
+
+    .form-errors{
+        background-color: rgb(218, 47, 47);
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .success-message {
+        background-color: $green;
+        color: $white;
+        width: 90%;
+        max-width: 400px;
+        padding: 2rem 1rem;
+        text-align: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 201;
+    }
+
+    @media screen and (max-width: 700px){
+        .success-message h2{
+            font-size: $fs-small;
+        }
+    }
+}

@@ -118,4 +118,87 @@ p {
     margin-bottom: 0;
   }
 }
-/*# sourceMappingURL=variables.css.map */
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #003F6B;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.title-image {
+  position: relative;
+}
+
+.title-image .title-img {
+  width: 100%;
+}
+
+.title-image .title-img img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.title-image .title-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .7;
+}
+
+.title-image .yellow {
+  background-color: #F8BD64;
+}
+
+.title-image .blue {
+  background-color: #003f6b;
+}
+
+.title-image .white {
+  color: #f1f1f1;
+}
+
+.title-image .black {
+  color: #000000;
+}
+
+.title-image .title-content {
+  position: absolute;
+  top: 30%;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 1;
+}
+
+.title-image h2 {
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 550px) {
+  .title-image h2 {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=TitleImage.css.map */

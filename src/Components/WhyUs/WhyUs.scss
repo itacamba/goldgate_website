@@ -1,0 +1,61 @@
+@import '../../Styles/index';
+@import '../../Styles/variables';
+
+
+.why-us {
+    @extend .pad-top-bot;
+
+
+    .deco-art {
+        @extend .deco-art;
+        margin-left: 5vw;
+    }
+
+    h2 {
+        @extend .pad-sides;
+    }
+
+    p {
+        @extend .pad-sides;
+        max-width: 500px;
+    }
+
+    .why-us-img {
+        max-width: 500px;
+        margin-left: auto;
+        margin-top: 2rem;
+    }
+
+    .why-us-img img{
+        width: 100%;
+    }
+
+    .two-col {
+        @extend .two-col;
+    }
+
+    ul {
+        @extend .pad-sides;
+        margin-top: 1rem;
+        float: right;
+    }
+
+    li {
+        padding-bottom: 10px;
+    }
+
+    i {
+        margin-right: 5px;
+    }
+}
+
+
+@media screen and (max-width: 550px){
+
+    .why-us {
+        .why-us-img {
+            width: 70%;
+        }
+    }
+
+}

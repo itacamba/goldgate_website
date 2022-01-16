@@ -1,0 +1,16 @@
+@import '../../Styles/index';
+@import '../../Styles/variables';
+
+
+.process {
+    @extend .pad-top-bot;
+    @extend .pad-sides;
+    background-color: $light-grey;
+
+    .gallery-card {
+        background-color: $light-grey;
+        box-shadow: none;
+        border: 3px solid $gold;
+        border-radius: 20px;
+    }
+}
