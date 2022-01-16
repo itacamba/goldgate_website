@@ -83,7 +83,7 @@ p {
   color: black;
   display: inline-block;
   text-transform: uppercase;
-  padding: 1rem 2.5rem;
+  padding: .8rem 2rem;
   margin-top: 2rem;
 }
 
@@ -106,6 +106,8 @@ p {
 .nav-container {
   width: 100%;
   margin-top: 1rem;
+  position: relative;
+  z-index: 1;
 }
 
 .nav-container .navigation {
@@ -125,13 +127,13 @@ p {
 
 .nav-container i {
   font-size: 25px;
-  color: #003F6B;
+  color: #003f6b;
 }
 
 .nav-container .call-btn {
   width: 40px;
   height: 40px;
-  background-color: #003F6B;
+  background-color: #003f6b;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,7 +165,7 @@ p {
 
 .nav-container .desktop-nav .action-btn {
   padding: .7rem 1.8rem;
-  background-color: #003F6B;
+  background-color: #003f6b;
   color: #f1f1f1;
   border-radius: 5px;
 }
@@ -205,12 +207,11 @@ p {
 
 .nav-container .menu-content .action-btn {
   padding: .7rem 1.8rem;
-  background-color: #003F6B;
+  background-color: #003f6b;
   color: #f1f1f1;
   border-radius: 5px;
   float: right;
-  margin-right: 5vw;
-  margin-top: 1rem;
+  margin: 1rem 5vw;
 }
 
 @media screen and (max-width: 800px) {
