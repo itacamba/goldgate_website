@@ -18,24 +18,12 @@ const Footer = () => {
 
     const socialMedia = [
         {
-            iconClass: 'fab fa-linkedin',
-            url: 'https://www.linkedin.com/company/d8group/' 
-        },
-        {
-            iconClass: 'fab fa-twitter-square',
-            url: 'https://twitter.com/group_d8' 
-        },
-        {
-            iconClass: 'fab fa-youtube-square',
-            url: 'https://www.youtube.com/channel/UCOAC4PCTkdNHTYt5RT0TnOA' 
-        },
-        {
             iconClass: 'fab fa-instagram-square',
-            url: 'https://www.instagram.com/d8group/' 
+            url: 'https://www.instagram.com/goldgate_properties.llc/' 
         },
         {
             iconClass: 'fab fa-facebook-square',
-            url: 'https://www.facebook.com/d8group' 
+            url: 'https://www.facebook.com/Goldgate-Properties-105978435062520' 
         },
     ]
 
