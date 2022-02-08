@@ -1,5 +1,6 @@
 {
-  "name": "goldgate",
+  "name": "goldgatellc",
+  "homepage": "http://goldgatellc.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

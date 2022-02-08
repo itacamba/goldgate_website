@@ -28,7 +28,7 @@ const Navigation = () => {
         <div className='nav-container'>
             <div className='navigation'>
                 <div className="call-btn">
-                    <a href="tel:571-982-9406"><i className="fas fa-phone"></i></a>
+                    <a href="tel:954-648-3405"><i className="fas fa-phone"></i></a>
                 </div>
                 <div className="menu-icon" onClick={() => setOpen(!open)}>
                     <i className="fas fa-bars"></i>

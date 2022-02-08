@@ -21,7 +21,7 @@ const Contact = () => {
             hasErrors = true;
         } else if(!phone){
             hasErrors = true;
-        } else if(!problem){
+        } else if(!message){
             hasErrors = true;
         } else {
             hasErrors = false;
@@ -49,7 +49,7 @@ const Contact = () => {
         setName('')
         setEmail('');
         setPhone('');
-        setProblem('');
+        setMessage('');
         const checkboxes = document.querySelectorAll('input[type=checkbox]')
         checkboxes.forEach(box => box.checked = false)
         
@@ -57,7 +57,7 @@ const Contact = () => {
 
 
     const sendEmail = () => {        
-        emailjs.sendForm('service_0yh4eyg', 'template_izc2b46', form.current, 'user_3GJo9YA8mRll4IvSsEQKl')
+        emailjs.sendForm('service_b8hz6ha', 'template_f39ec09', form.current, 'user_w9Vww6jbvTrp6yMaHhS2D')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -72,7 +72,7 @@ const Contact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
-    const [problem, setProblem] = useState('');
+    const [message, setMessage] = useState('');
 
     return (
         <div className='contact' id="contact">
@@ -90,7 +90,7 @@ const Contact = () => {
                 <input type="text" placeholder='FULL NAME' name='name' value={name} onChange={(e) => setName(e.target.value)} />
                 <input type="email" placeholder='EMAIL' name='email' value={email} onChange={(e) => setEmail(e.target.value)} />
                 <input type="text" placeholder='PHONE' name='phone' value={phone} onChange={(e) => setPhone(e.target.value)} />
-                <textarea type="text" placeholder='MESSAGE' name='problem' value={problem} onChange={(e) => setProblem(e.target.value)} />
+                <textarea type="text" placeholder='MESSAGE' name='message' value={message} onChange={(e) => setMessage(e.target.value)} />
                 {         
                 formErrors ?
                 <div className="form-errors">
