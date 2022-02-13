@@ -160,6 +160,15 @@ p {
   margin: 0 auto;
 }
 
+.free-estimate .get-quote {
+  background-color: #F8BD64;
+  border-bottom: 1px solid #F8BD64;
+}
+
+.free-estimate .get-quote h2 {
+  color: #003f6b;
+}
+
 .free-estimate .col .video {
   width: 100%;
   display: block;
@@ -184,9 +193,14 @@ p {
           justify-content: center;
   padding: 1rem 1.5rem;
   width: 300px;
-  background-color: #F8BD64;
+  background-color: #003f6b;
+  color: #f1f1f1;
   margin: 0 auto;
   margin-top: 2rem;
   cursor: pointer;
+}
+
+.free-estimate .footer {
+  padding-top: 1rem;
 }
 /*# sourceMappingURL=FreeEstimate.css.map */

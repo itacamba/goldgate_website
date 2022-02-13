@@ -26,7 +26,6 @@ const FreeEstimate = () => {
                     </p>
                     <p>Our installation timeline: 1 - 2 days.
                     </p>
-                    https://youtu.be/4Oe6JdcJuNI
                 </div>
                 <div className="col">
                     <div className="video">
@@ -34,7 +33,7 @@ const FreeEstimate = () => {
                     </div>
                 </div>
             </div>
-            <div className="sales">
+            <div className="sales get-quote">
                 <h2>Schedule your free in-house consultation now!</h2>
                 <a className="button" href="https://calendly.com/goldgate/make-an-appointment?month=2022-02">I'm ready to get a new kitchen</a>
             </div>

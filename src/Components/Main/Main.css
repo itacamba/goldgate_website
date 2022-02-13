@@ -125,6 +125,10 @@ p {
   width: 45%;
 }
 
+.col img {
+  width: 100%;
+}
+
 @media screen and (max-width: 820px) {
   .two-col {
     -webkit-box-orient: vertical;
