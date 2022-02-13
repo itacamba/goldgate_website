@@ -1,0 +1,42 @@
+@import '../../Styles/index';
+@import '../../Styles/variables';
+
+
+.free-estimate {
+    
+    .header {
+        margin-bottom: 50px;
+    }
+    .sales {
+        width: 100%;
+        @extend .pad-top-bot;
+        @extend .pad-sides;
+        background-color: $blue;
+    }
+
+    .sales h2, .sales p {
+        color: $white;
+        max-width: 500px;
+        margin: 0 auto;    
+    }
+
+    .col video {
+        width: 100%;
+        display: block;
+    }
+
+    .card {
+        padding: 5vw;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        padding: 1rem 1.5rem;
+        width: 300px;
+        background-color: $yellow;
+        margin: 0 auto;
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+}

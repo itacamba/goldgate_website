@@ -57,9 +57,14 @@ const Footer = () => {
             </div>
 
             <div className="address">
-                1754 Funston St. <br></br>
-                Hollywood, Florida<br></br>
-                20171
+                <i className="fas fa-building"></i>
+                Office | 1754 Funston St.
+                Hollywood, Florida
+                33020
+            </div>
+            <div className="address">
+                <i className="fas fa-map-marked-alt"></i>
+                Shop | 991 State Road 7 C5, Plantation, Fl 33317
             </div>
             <div className="copyright">
                 <p>Copyright © {date} Goldgate Properties LLC</p>

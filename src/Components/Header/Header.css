@@ -1,7 +1,11 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
+  color: #003F6B;
 }
 
 li {
@@ -37,7 +41,7 @@ h2 {
 
 h3 {
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 2.5rem;
   line-height: 1.9rem;
 }
@@ -46,10 +50,11 @@ p {
   margin-top: 1rem;
   line-height: 1.8rem;
   font-size: 1.2rem;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 1188px) {
-  ˝ h3 {
+  h3 {
     margin-top: 2.5rem;
   }
 }
@@ -60,14 +65,9 @@ p {
   }
 }
 
-.box-shadow-sharp {
+.shadow-blur {
   -webkit-box-shadow: 0px 1px 23px 1px rgba(196, 196, 196, 0.71);
   box-shadow: 0px 1px 23px 1px rgba(196, 196, 196, 0.71);
-}
-
-.box-shadow-blur {
-  -webkit-box-shadow: 0px 1px 23px 1px rgba(222, 222, 222, 0.71);
-  box-shadow: 0px 1px 23px 1px rgba(222, 222, 222, 0.71);
 }
 
 .dark-shadow {
@@ -83,7 +83,7 @@ p {
   color: black;
   display: inline-block;
   text-transform: uppercase;
-  padding: 1rem 2.5rem;
+  padding: .8rem 2rem;
   margin-top: 2rem;
 }
 
@@ -101,6 +101,44 @@ p {
   background: #45bedc;
   background: -webkit-gradient(linear, left top, right top, from(#45bedc), to(#18a3df));
   background: linear-gradient(90deg, #45bedc 0%, #18a3df 100%);
+}
+
+.deco-art {
+  width: 4rem;
+  height: 5px;
+  background-color: #003f6b;
+}
+
+.two-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.col {
+  width: 45%;
+}
+
+@media screen and (max-width: 820px) {
+  .two-col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .col {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .col:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .header {
