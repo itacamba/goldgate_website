@@ -160,8 +160,14 @@ p {
   margin: 0 auto;
 }
 
-.free-estimate .col video {
+.free-estimate .col .video {
   width: 100%;
+  display: block;
+}
+
+.free-estimate .col iframe {
+  width: 100%;
+  height: 500px;
   display: block;
 }
 

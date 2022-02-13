@@ -2,7 +2,6 @@ import React from 'react';
 import '../Header/Header.css'
 import Logo from './../../Images/logo.png';
 import './FreeEstimate.css';
-import SalesVideo from '../../Images/sales.mp4';
 import Footer from '../Footer/Footer';
 
 const FreeEstimate = () => {
@@ -27,12 +26,12 @@ const FreeEstimate = () => {
                     </p>
                     <p>Our installation timeline: 1 - 2 days.
                     </p>
+                    https://youtu.be/4Oe6JdcJuNI
                 </div>
                 <div className="col">
-                    <video controls>
-                        <source src={SalesVideo}type="video/mp4" />
-                    Your browser does not support the video tag.
-                    </video>
+                    <div className="video">
+                        <iframe  src="https://www.youtube.com/embed/4Oe6JdcJuNI?rel=0" title="Goldgate LLC Kitchens" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowFullScreen></iframe>
+                    </div>
                 </div>
             </div>
             <div className="sales">
