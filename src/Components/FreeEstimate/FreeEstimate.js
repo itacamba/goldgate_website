@@ -35,7 +35,19 @@ const FreeEstimate = () => {
             </div>
             <div className="sales get-quote">
                 <h2>Schedule your free in-house consultation now!</h2>
-                <a className="button" href="https://calendly.com/goldgate/make-an-appointment?month=2022-02">I'm ready to get a new kitchen</a>
+                <a className="button" href="https://calendly.com/goldgate/make-an-appointment?month=2022-02">Click Here to Make an Appointment</a>
+            </div>
+            <div className="sales wpp">
+                <i className="fab fa-whatsapp"></i>
+                <h3>Send us a text via Whatsapp</h3>
+                <h2>+1 (954) 648-3405</h2>
+            </div>
+            <div className="sales wpp phone-us">
+                <h2>Hablamos Español!</h2>
+                <i className="fas fa-phone-alt"></i>
+                <h3>For more information, call us or text us!</h3>
+                <h3>Para mas informacion llamenos o envienos un mensaje</h3>
+                <h2>+1 (954) 648-3405</h2>
             </div>
             <Footer />
         </div>

@@ -152,6 +152,7 @@ p {
 .free-estimate .sales {
   width: 100%;
   background-color: #003f6b;
+  text-align: center;
 }
 
 .free-estimate .sales h2, .free-estimate .sales p {
@@ -161,12 +162,11 @@ p {
 }
 
 .free-estimate .get-quote {
-  background-color: #F8BD64;
-  border-bottom: 1px solid #F8BD64;
+  background-color: #003f6b;
 }
 
 .free-estimate .get-quote h2 {
-  color: #003f6b;
+  color: #f1f1f1;
 }
 
 .free-estimate .col .video {
@@ -191,16 +191,63 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1rem 1.5rem;
-  width: 300px;
-  background-color: #003f6b;
-  color: #f1f1f1;
+  padding: 2rem 3rem;
+  width: 50%;
+  background-color: #F8BD64;
+  color: #003f6b;
+  font-size: 1.5rem;
   margin: 0 auto;
   margin-top: 2rem;
   cursor: pointer;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 4px 13px 0px #575757;
+  box-shadow: 2px 4px 13px 0px #575757;
 }
 
 .free-estimate .footer {
   padding-top: 1rem;
+}
+
+.free-estimate .sales > i {
+  font-size: 50px;
+  color: #003f6b;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.free-estimate .wpp {
+  background-color: #F8BD64;
+  color: #003f6b;
+  padding: 2rem;
+}
+
+.free-estimate .wpp h2 {
+  color: #003f6b;
+}
+
+.free-estimate .phone-us {
+  padding-top: 0;
+}
+
+.free-estimate .phone-us h2 {
+  margin-bottom: 1rem;
+  border: 1px solid #003f6b;
+}
+
+.free-estimate .phone-us h3 {
+  margin-top: 0;
+}
+
+.free-estimate .phone-us i {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 700px) {
+  .free-estimate .button {
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=FreeEstimate.css.map */
